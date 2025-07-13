@@ -25,7 +25,7 @@ def load_model(model_path):
 # --- FEATURE IMPORTANCE FUNCTION ---
 @st.cache_data
 def get_feature_importance(_model):
-    """Extracts and formats feature importances into sorted positive and negative lists."""
+    """Extracts and formats feature importances from the model pipeline."""
     # Extract the vectorizer and classifier from the pipeline
     vectorizer = _model.named_steps['tfidf']
     classifier = _model.named_steps['logreg']
@@ -37,11 +37,9 @@ def get_feature_importance(_model):
     # Create a DataFrame
     importance_df = pd.DataFrame({'feature': feature_names, 'coefficient': coefficients})
 
-    # Get top 15 positive features, sorted from most to least positive
-    top_positive = importance_df[importance_df['coefficient'] > 0].sort_values(by='coefficient', ascending=False).head(15)
-
-    # Get top 15 negative features, sorted from most to least negative
-    top_negative = importance_df[importance_df['coefficient'] < 0].sort_values(by='coefficient', ascending=True).head(15)
+    # Get the top 15 positive and negative words
+    top_positive = importance_df.sort_values(by='coefficient', ascending=False).head(15)
+    top_negative = importance_df.sort_values(by='coefficient', ascending=True).head(15)
 
     return top_positive, top_negative
 

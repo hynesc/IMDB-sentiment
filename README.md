@@ -1,5 +1,4 @@
-# 🎬 IMDb Sentiment Analyzer: An End-to-End NLP Project
-
+# 🎬 IMDb Sentiment Analyzer
 ### A web application that performs real-time sentiment analysis on movie reviews, deployed and accessible online.
 
 This project demonstrates a full, end-to-end data science workflow. It begins with data sourcing and preparation, moves through model development and hyperparameter tuning, and concludes with the deployment of the final model as an interactive web application using Streamlit.

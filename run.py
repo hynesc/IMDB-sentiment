@@ -23,8 +23,7 @@ def load_model(model_path):
         st.error(f"Model file not found at {model_path}. Please ensure it's in the correct directory.")
         return None
 
-# IMPORTANT: Make sure the path matches the name of your .joblib file
-MODEL_FILE = 'best_model.joblib'
+MODEL_FILE = 'imdb_model.joblib'
 model = load_model(MODEL_FILE)
 
 
@@ -32,14 +31,14 @@ model = load_model(MODEL_FILE)
 st.title("🎬 IMDb Sentiment Analyzer")
 st.markdown("""
 Welcome! This app uses a **Logistic Regression** model to predict whether a movie review is **Positive** or **Negative**.
-The model was trained on 50,000 reviews from the IMDb dataset.
+I trained this model on 50,000 reviews from the IMDb dataset.
 
-**Enter a review below and see the magic happen!**
+Enter a review below and see the magic happen!
 """)
 
 # User input form
 with st.form(key='review_form'):
-    user_input = st.text_area("Enter your movie review here:", "This movie was absolutely fantastic! The acting, the plot, everything was perfect.", height=150)
+    user_input = st.text_area("Enter your movie review here:", "This movie was fantastic! The acting, the plot, everything was perfect.", height=150)
     submit_button = st.form_submit_button(label='Analyze Sentiment ✨')
 
 

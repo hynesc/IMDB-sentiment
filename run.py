@@ -45,7 +45,7 @@ def get_feature_importance(_model):
 
 
 # Load the model
-MODEL_FILE = 'best_logistic_regression_model.joblib'
+MODEL_FILE = 'imdb_model.joblib'
 model = load_model(MODEL_FILE)
 
 

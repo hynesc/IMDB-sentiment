@@ -51,7 +51,7 @@ The final, tuned model was evaluated on the held-out test set, achieving an **ac
 1.  **Clone the Repository**:
     ```bash
     git clone https://github.com/hynesc/IMDb-sentiment
-    cd IMDb-sentiment
+    cd imdb-sentiment
     ```
 
 2.  **Set Up a Virtual Environment** (Recommended):

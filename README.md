@@ -39,7 +39,7 @@ The final, tuned model was evaluated on the held-out test set, achieving an **ac
 
 ## 🛠️ Technical Stack
 
--   **Core Language**: Python 3
+-   **Core Language**: Python 3.11
 -   **Data Manipulation**: Pandas
 -   **Machine Learning Pipeline**: Scikit-learn (`TfidfVectorizer`, `LogisticRegression`, `Pipeline`, `GridSearchCV`)
 -   **Web Framework**: Streamlit

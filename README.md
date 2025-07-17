@@ -1,26 +1,26 @@
-# 🎬 IMDb Sentiment Analyzer
+# IMDb Sentiment Analyzer
 ### A web app that performs real-time sentiment analysis on movie reviews, deployed and accessible online.
 
 This project demonstrates a full, end-to-end data science workflow. It begins with data sourcing and preparation, moves through model development and hyperparameter tuning, and concludes with the deployment of the final model as an interactive web application using Streamlit.
 
-## 🚀 Live Application
+## Live Application
 
-### **[➡️ Launch the App: imdb-sentiment-prediction.streamlit.app](https://imdb-sentiment-prediction.streamlit.app)**
+### **[Launch the App: imdb-sentiment-prediction.streamlit.app](https://imdb-sentiment-prediction.streamlit.app)**
 
-## 🌟 Key Features
+## Key Features
 
 -   **Real-Time Classification**: Instantly classify any movie review as **Positive** or **Negative**.
 -   **Probabilistic Confidence**: Displays the model's confidence score for each prediction.
 -   **Interactive & User-Friendly UI**: A clean and simple interface built with Streamlit for ease of use.
 -   **Optimized Performance**: Powered by a Logistic Regression model that has been tuned for optimal performance using `GridSearchCV`.
 
-## 🎯 Project Motivation & Business Value
+## Project Motivation & Business Value
 
 In the entertainment industry, understanding audience reception is critical for success. Movie studios, streaming platforms, and marketing agencies invest heavily in gauging public opinion to inform marketing campaigns, predict box office success, and guide future content creation.
 
 This project tackles that need by providing an automated tool to instantly analyze the sentiment of user-generated text, such as reviews from IMDb, Rotten Tomatoes, or social media. This project serves as a proof-of-concept for a valuable business intelligence tool.
 
-## 🧠 The Data Science Workflow
+## The Data Science Workflow
 
 The entire model development process is documented in the [**`model_training_and_evaluation.ipynb`**](model_training_and_evaluation.ipynb) notebook. The key stages are outlined below.
 
@@ -37,7 +37,7 @@ The entire model development process is documented in the [**`model_training_and
 ### 3. Final Model Evaluation
 The final, tuned model was evaluated on the held-out test set, achieving an **accuracy of ~90.8%**. This strong performance indicates its ability to generalize well to new, unseen movie reviews.
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 -   **Core Language**: Python 3.11
 -   **Data Manipulation**: Pandas

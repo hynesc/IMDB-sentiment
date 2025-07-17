@@ -6,7 +6,7 @@ A web app that performs real-time sentiment analysis on movie reviews. This proj
 ## Live Application
 
 You can view the deployed interactive application here:
-**[Launch the App: imdb-sentiment-prediction.streamlit.app](https://imdb-sentiment-prediction.streamlit.app)**
+**[imdb-sentiment-prediction.streamlit.app](https://imdb-sentiment-prediction.streamlit.app)**
 
 ---
 ## Key Features

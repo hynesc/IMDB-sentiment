@@ -61,7 +61,7 @@ The project follows a standard data science workflow, documented in the accompan
 
 1.  **Clone the Repository**:
     ```bash
-    git clone [https://github.com/hynesc/imdb-sentiment](https://github.com/hynesc/imdb-sentiment)
+    git clone github.com/hynesc/imdb-sentiment
     cd imdb-sentiment
     ```
 
